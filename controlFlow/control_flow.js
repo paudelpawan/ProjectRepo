@@ -39,3 +39,23 @@ console.log("User Category:", userCategory);
 let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 console.log("Authentication Status:", authenticationStatus);
+
+var roletype ="Employee" ;
+var roles;
+switch(roletype){
+    case "Employee":
+        roles = "Authorized to dietary services";
+        break;
+    case "Enrolled Member":
+        roles = "Authorized to dietary services and one-on-one interaction";
+        break;
+    case "Subscriber":
+        roles = "Dietary Services only";
+        break;
+    case "Non-Subscriber":
+        roles = "Enroll or at least subscribe to avail this facility";
+        break;
+    default:
+        roles= "Unknown";
+     }
+    console.log("You are", roles);
